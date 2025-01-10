@@ -20,8 +20,7 @@ const services = [
     "Performance Optimization",
 ]
 
-
-const Hero = () => {
+export function Hero() {
     const [currentService, setCurrentService] = useState("")
     const [currentIndex, setCurrentIndex] = useState(0)
     const [isDeleting, setIsDeleting] = useState(false)
@@ -48,9 +47,8 @@ const Hero = () => {
         return () => clearTimeout(timer)
     }, [typeText, isDeleting])
 
-
-    return (
-        <div className='flex flex-col text-center justify-center py-[120px] bg-cover bg-center h-[100vh]' 
+  return (
+    <div className='flex flex-col text-center justify-center py-[120px] bg-cover bg-center h-[100vh]' 
         style={{
             backgroundImage: `linear-gradient(to bottom right, white, rgba(255,255,255,0) 50%), url('/images/bg-pattern.png')`,
           }}>
@@ -76,8 +74,5 @@ const Hero = () => {
             </button>
         </div>
         </div>
-    );
+  )
 }
-
-
-export default Hero

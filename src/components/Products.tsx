@@ -70,7 +70,7 @@ const SolutionCard = ({ solution, index }:any) => {
             key={idx}
             className="flex items-center gap-2 text-sm text-gray-600"
           >
-            <div className="w-1.5 h-1.5 rounded-full bg-green-200" />
+            <div className="w-1.5 h-1.5 rounded-full bg-gray-800" />
             {feature}
           </div>
         ))}
@@ -86,25 +86,17 @@ const SolutionCard = ({ solution, index }:any) => {
   )
 }
 
-export default function Products() {
+export function Products() {
   return (
-    <div className="py-20 ">
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-
-          
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            <h2 className="whitespace-nowrap mt-2 text-[60px] font-serif font-light tracking-tight">
-              Digital Solutions for Every Industry
+    <div className="py-[80px]">
+      <div className="container mx-auto px-4 h-[100vh]">
+        <div className="text-center py-[30px] mb-[30px]">
+            <h2 className="whitespace-nowrap text-[70px] font-serif font-light tracking-tight ">
+              Digital Products for Every Industry
             </h2>
-            <p className="text-gray-600 sm:text-lg lg:text-xl leading-6">
+            <p className="text-gray-600 sm:text-lg lg:text-xl leading-6 px-[300px]">
               Transform your business with our comprehensive suite of industry-specific solutions designed to streamline operations and drive growth.
             </p>
-          </motion.div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
