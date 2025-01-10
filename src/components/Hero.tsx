@@ -61,7 +61,7 @@ const Hero = () => {
           {currentService}
           <span className="animate-blink">|</span>
         </h2>
-            <p className=" text-base sm:text-lg lg:text-xl leading-6 px-[150px]">
+            <p className="text-gray-600 text-base sm:text-lg lg:text-xl leading-6 px-[150px]">
           Discover creative solutions designed to help your business grow,
           thrive, and stay ahead. Together, we turn your vision into reality
           with passion and purpose.
